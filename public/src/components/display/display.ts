@@ -46,6 +46,7 @@ class Card extends HTMLElement{
         }
 
 
+    
     render(){
         if(this.shadowRoot){
         this.shadowRoot.innerHTML = `
@@ -58,6 +59,15 @@ class Card extends HTMLElement{
      }
 
 }
+
+   // buttonElement.addEventListener('click', () => {
+   // if (this.likeStatus === "null"){
+   //     this.likeStatus = this.likePositive;
+   //   } else if (this.likeStatus === this.likePositive){
+   //     this.likeStatus = this.likeNegative;} else {
+   //     this.likeStatus = positive}
+   //     }
+   // }})
 
 customElements.define("custom-card",Card);
 export default Card;
